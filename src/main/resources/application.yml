@@ -5,10 +5,10 @@ spring:
   application:
     name: spring-security
 
-  security:
-    user:
-      name: user
-      password: pass
+#  security:
+#    user:
+#      name: user
+#      password: pass
 
 springdoc:
   swagger-ui:
