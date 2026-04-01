@@ -1,5 +1,5 @@
 server:
-  port: 9090
+  port: 9091
 
 spring:
   application:
@@ -8,4 +8,15 @@ spring:
   security:
     user:
       name: user
-      password: user
+      password: pass
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui
+
+
+app-config:
+  jwt:
+    secret: ${JWT_SECRET:e3ff5f077839c1331b1d893a728246685cb7dba9e3a77bffe7d52eaccf660988}
+    expiration-ms: 86400000  # 24 hours
